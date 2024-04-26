@@ -5,10 +5,11 @@ import course.work2.exception.EmptyException;
 import course.work2.exception.NotFoundException;
 import course.work2.model.Question;
 import course.work2.service.QuestionService;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-
+@Service
 public class JavaQuestionService implements QuestionService {
 
     private final Set<Question> questions = new HashSet<>();
